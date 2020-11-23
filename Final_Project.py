@@ -18,7 +18,7 @@ global Carriage
 global Seat_No
 
 
-dbfile = "C:\Users\KCP\PycharmProjects\Python-Airline-Booking-System-master\TrainTicketBooking.db"
+dbfile = "TrainTicketBooking.db"
 con = sqlite3.connect(dbfile)
 cur = con.cursor()
 
@@ -761,7 +761,7 @@ def Welcome_Page():
     canvas.config(bg='dark green')
     canvas.pack()
 
-    my_image = PhotoImage(file='C:\Users\KCP\PycharmProjects\Python-Airline-Booking-System-master\Railways_Image1.gif')
+    my_image = PhotoImage(file='Railways_Image1.gif')
     my_img = canvas.create_image(0, 0, anchor=NW, image=my_image)
 
     Label(root, text="NorwegianRails", font=('Slab Serif', 18), fg='white', bg='blue').place(x=250, y=80)
